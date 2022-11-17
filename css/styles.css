@@ -8,15 +8,11 @@
 
 * {
   box-sizing: border-box;
-}
-
-*::before,
-::after {
   margin: 0;
   padding: 0;
 }
 
-/* exo-regular - latin */
+/* add font-face. -exo-regular - latin */
 @font-face {
   font-family: "Exo";
   font-style: normal;
@@ -37,6 +33,14 @@ body {
   background-color: rgb(228, 224, 254);
   font-family: Exo;
   text-align: center;
+}
+
+.body_border {
+  border: 2px solid black;
+  width: 900px;
+  height: 1300px;
+  margin: 20px auto;
+  border-radius: 20px;
 }
 
 header {
@@ -67,6 +71,7 @@ h1 {
 
 h2 {
   font-size: 25px;
+  color: rgb(74, 0, 95);
 }
 
 .navigation {
@@ -155,4 +160,5 @@ button:hover {
   text-align: left;
   border: 2px solid;
   border-radius: 10px;
+  width: 150px;
 }
