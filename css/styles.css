@@ -1,3 +1,11 @@
+:root {
+  --color-btred: rgb(128, 134, 230);
+  --color-bttextblack: rgb(255, 255, 255);
+  --color-blkqoutepink: rgb(182, 155, 201);
+  --textshdw-2px: 1px 1px rgb(42, 41, 41);
+  --boxshdw-5px: 3px 3px rgb(0, 0, 0, 0.3);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -26,9 +34,17 @@
 }
 
 body {
-  background-color: rgb(198, 180, 211);
+  background-color: rgb(228, 224, 254);
   font-family: Exo;
   text-align: center;
+}
+
+header {
+  background-color: rgb(74, 0, 95);
+  width: 900px;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
 }
 
 h1,
@@ -37,9 +53,16 @@ h3,
 h4,
 h5,
 h6 {
-  color: rgb(33, 0, 196);
+  color: rgb(253, 233, 250);
   font-weight: bold;
   margin: 0px;
+  padding: 0px;
+  text-shadow: var(--textshdw-2px);
+}
+
+h1 {
+  padding: 20px;
+  font-size: 40px;
 }
 
 h2 {
@@ -47,26 +70,85 @@ h2 {
 }
 
 .navigation {
-  background-color: rgba(19, 16, 199, 0.439);
+  margin-right: 10px;
   text-decoration: none;
-  color: rgb(115, 7, 216);
-  padding: 3px;
+  color: rgb(242, 229, 255);
+  padding: 3px 8px;
   border: 2px solid;
   border-color: black;
   border-radius: 7px;
+  text-shadow: var(--textshdw-2px);
+}
+
+.navigation:hover {
+  background-color: var(--color-btred);
+  color: var(--color-bttextblack);
+}
+
+/* every element with href beginning with # set bakckground-color*/
+
+a[href^="#"] {
+  background-color: rgba(19, 16, 199, 0.439);
 }
 
 blockquote {
-  background-color: rgb(182, 155, 201);
+  background-color: var(--color-blkqoutepink);
   border-radius: 5px;
-  padding: 10px;
+  padding: 6px;
+  box-shadow: var(--boxshdw-5px);
+  width: 770px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 15px;
+}
+
+.name_age {
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
 }
 
 ul {
-  list-style-type: none;
+  list-style: none;
   border: 2px solid;
   border-radius: 10px;
   padding: 10px;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul li::before {
+  content: "🔅";
+}
+
+article {
+  background-color: var(--color-blkqoutepink);
+  box-shadow: var(--boxshdw-5px);
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  padding: 10px;
+}
+
+button {
+  margin-top: 30px;
+  padding: 8px 30px;
+  cursor: pointer;
+  border-radius: 15px;
+  border: 1px solid black;
+  background-color: rgb(99, 47, 173);
+  color: rgb(204, 94, 204);
+  font-weight: bold;
+  text-shadow: var(--textshdw-2px);
+  box-shadow: var(--textshdw-2px);
+}
+
+button:hover {
+  background-color: var(--color-btred);
+  color: var(--color-bttextblack);
+  text-shadow: none;
 }
 
 .address_h {
