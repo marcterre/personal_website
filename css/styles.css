@@ -23,6 +23,7 @@ body {
   background-color: rgb(198, 180, 211);
   font-family: Exo;
   text-align: center;
+  margin: 10px 90px;
 }
 
 h1,
@@ -32,14 +33,37 @@ h4,
 h5,
 h6 {
   color: rgb(33, 0, 196);
+  font-weight: bold;
 }
 
-a {
+h2 {
+  font-size: 25px;
+}
+
+.navigation {
   text-decoration: none;
   color: rgb(115, 7, 216);
-  margin: 10px;
   padding: 3px;
   border: 2px solid;
   border-color: black;
   border-radius: 7px;
+}
+
+blockquote {
+  background-color: rgb(182, 155, 201);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.address_h {
+  text-align: left;
+  border: 2px solid;
+  padding: 10px;
 }
