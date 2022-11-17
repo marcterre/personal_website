@@ -4,19 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
     <title>my personal webpage</title>
   </head>
   <header>
     <h1>Welcome to my universe</h1>
     <nav>
-      <a href="#about-me">About me</a>
-      <a href="#my-projects">My Projects</a>
-      <a href="#contact">Contact me</a>
-      <a href="#links">Links</a>
+      <a href="#about-me" class="navigation">About me</a>
+      <a href="#my-projects" class="navigation">My Projects</a>
+      <a href="#contact" class="navigation">Contact me</a>
+      <a href="#links" class="navigation">Links</a>
     </nav>
   </header>
   <body>
-    <hr />
+    <section class="body_box">
     <blockquote>
       <q>
         There are two types of beings in the universe: Those who dance and those
@@ -26,12 +27,12 @@
     </blockquote>
     <section>
       <h2 id="about-me">About me</h2>
-      <p>
+      <p class="name_age">
         Hello! My Name is Marc. I'm 25 and live in Biblis, a small city in
         South-Hessen.
       </p>
-      <figure>
-        <img src="/images/profile_picture.jpeg" alt="profile" height="100" />
+      <figure class="profile">
+        <img src="/images/profile_picture.jpeg" alt="profile"/>
       </figure>
       <figcaption></figcaption>
       <section>
@@ -55,28 +56,23 @@
         the step i wanted to do for a long time - learning web development full
         time!
       </article>
-      <hr />
     </section>
     <section>
       <h2 id="my-projects">My Projects</h2>
       <img
-        src="https://media.giphy.com/media/YULPJoecGetvtOm1H0/giphy.gif"
-        alt="webpage_preview"
-        width="190px"
+        src="https://media.giphy.com/media/26zzgaDnp9HgPX1uw/giphy.gif"
+        alt="webpage_preview" class="project-icon"
       />
       <img
-        src="https://media.giphy.com/media/YULPJoecGetvtOm1H0/giphy.gif"
-        alt="webpage_preview"
-        width="190px"
+        src="https://media.giphy.com/media/xT9IgioE60R9797Uc0/giphy.gif"
+        alt="webpage_preview" class="project-icon"
       />
       <img
-        src="https://media.giphy.com/media/YULPJoecGetvtOm1H0/giphy.gif"
-        alt="webpage_preview"
-        width="190px"
+        src="https://media.giphy.com/media/fTz2gJRh37GpDaiiyD/giphy.gif"
+        alt="webpage_preview" class="project-icon"
       />
-      <hr />
     </section>
-    <section>
+    <section class="address_c">
       <h2 id="contact">Contact</h2>
       <address>
         Marc <br />
@@ -84,9 +80,9 @@
         44444 Far Far Away
       </address>
     </section>
-    <hr />
+    <button type="button">enter</button>
   </body>
-  <section>
+  <section class="links_icon">
     <h2 id="links">Links</h2>
     <a href="https://www.facebook.com"
       ><img src="/icons/facebook_icon.png" alt="facebook_icon" width="40px"
@@ -103,8 +99,8 @@
     <a href="https://www.youtube.com"
       ><img src="/icons/youtube_icon.png" alt="youtube_icon" width="40px"
     /></a>
-    <hr />
   </section>
+</section>
   <footer>
     <p>2022</p>
   </footer>
