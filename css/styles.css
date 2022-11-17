@@ -56,7 +56,7 @@ body {
   background-color: var(--color-backgrnd);
   border: 2px solid black;
   width: 1300px;
-  height: 800px;
+  height: 1500px;
   margin: 0px auto;
   border-radius: 0px 0px 20px 20px;
   border-top: none;
@@ -87,7 +87,7 @@ h1 {
 
 h2 {
   margin-left: 40px;
-  padding-top: 40px;
+  padding-top: 10px;
   font-size: 25px;
   color: rgb(74, 0, 95);
 }
@@ -144,9 +144,8 @@ ul {
   border: 2px solid;
   border-radius: 10px;
   padding: 10px;
+  margin-left: 40px;
   width: 150px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 ul li::before {
@@ -157,10 +156,17 @@ article {
   background-color: var(--color-blkqoutepink);
   box-shadow: var(--boxshdw-5px);
   border-radius: 5px;
-  margin-left: auto;
-  margin-right: auto;
   width: 700px;
   padding: 10px;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.project-icon {
+  margin-left: 40px;
+  width: 300px;
+  padding: 10px;
+  height: 400px;
 }
 
 button {
