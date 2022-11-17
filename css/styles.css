@@ -86,6 +86,8 @@ h1 {
 }
 
 h2 {
+  margin-left: 40px;
+  padding-top: 40px;
   font-size: 25px;
   color: rgb(74, 0, 95);
 }
@@ -115,20 +117,26 @@ a[href^="#"] {
 }
 
 blockquote {
+  margin-left: 40px;
+  text-align: center;
   background-color: var(--color-blkqoutepink);
   border-radius: 5px;
   padding: 6px;
   box-shadow: var(--boxshdw-5px);
   width: 770px;
-  margin-right: auto;
-  margin-left: auto;
   font-size: 15px;
 }
 
 .name_age {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 10px 40px;
   width: 700px;
+}
+
+.profile img {
+  margin: 10px 40px;
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
 }
 
 ul {
