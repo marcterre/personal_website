@@ -1,12 +1,11 @@
 :root {
-  --color-bttn: #1c3863;
-  --color-bttn-hover: #3570c8;
-  --color-bttn-text: white;
+  --color-bttn-text: rgb(0, 0, 0);
   --color-bttn-text-hover: rgb(167, 221, 254);
   --color-blkqoutepink: rgba(214, 216, 214, 0.711);
-  --textshdw-2px: 2px 2px rgb(98, 19, 114, 0.5);
-  --boxshdw: 2px 2px rgb(0, 0, 0, 0.3);
-  --color-backgrnd: rgb(41, 93, 48);
+  --textshdw-1px: 1px 1px rgba(112, 109, 109, 0.5);
+  --boxshdw: 2px 2px rgba(130, 130, 130, 0.3);
+  --color-backgrnd: rgb(255, 255, 255);
+  --color-box-backgrnd: rgba(78, 9, 131, 0.395);
 }
 
 /* alata-regular - latin */
@@ -29,25 +28,25 @@
 }
 body {
   font-family: Alata;
+  background-color: var(--color-backgrnd);
 }
 
 header {
   position: sticky;
   top: 1px;
   z-index: 1;
-  background-color: var(--color-backgrnd);
   width: 1300px;
   height: 100px;
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 2px;
+  background-color: var(--color-backgrnd);
 }
 
 h1 {
   padding: 20px;
   font-size: 50px;
-  text-align: center;
-  color: #ffffffef;
-  text-shadow: var(--textshdw-2px);
+  text-align: left;
+  color: #000000ef;
 }
 
 h2:not(#contact, #links) {
@@ -73,17 +72,24 @@ a[href^="#"] {
 
 .box_about {
   position: relative;
-  top: 10px;
-  border: 2px solid black;
-  border-radius: 5px;
+  top: 20px;
+  background-color: var(--color-box-backgrnd);
+  border-radius: 10px;
   width: 1300px;
   height: 500px;
 }
 
 .about_h {
-  position: relative;
-  text-align: center;
+  position: absolute;
+  top: 20px;
   height: 50px;
+  width: 150px;
+}
+
+.random_h{
+  position: absolute;
+  top: 400px;
+
 }
 
 .profile img {
@@ -95,11 +101,11 @@ a[href^="#"] {
   border-radius: 10px;
 }
 
-figcaption {
+p {
   text-align: center;
   position: absolute;
  top: 60px;
-  left: 40px;
+  left: 365px;
   background-color: var(--color-blkqoutepink);
   box-shadow: var(--boxshdw);
   border-radius: 5px;
@@ -108,11 +114,12 @@ figcaption {
 }
 
 ul {
+  position: absolute;
+  top: 100px;
+
   list-style: none;
-  border: 2px solid;
   border-radius: 10px;
   padding: 10px;
-  margin-left: 40px;
   width: 150px;
 }
 
@@ -130,6 +137,13 @@ article {
   width: 700px;
   padding: 20px;
 }
+
+.box_projects {position: relative;
+  top: 50px;
+  background-color: var(--color-box-backgrnd);
+  border-radius: 10px;
+  width: 1300px;
+  height: 500px;}
 
 .project-icon {
   margin-left: 30px;
@@ -159,7 +173,15 @@ button:hover {
   text-shadow: none;
 }
 
-.address_c {
+.box_links {
+  position: relative;
+  top: 80px;
+  background-color: var(--color-box-backgrnd);
+  border-radius: 10px;
+  width: 1300px;
+  height: 500px;}
+
+address {
   text-align: left;
   border: 2px solid;
   border-radius: 10px;
