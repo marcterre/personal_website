@@ -6,13 +6,7 @@
   --color-blkqoutepink: rgb(182, 155, 201);
   --textshdw-2px: 2px 2px rgb(98, 19, 114, 0.5);
   --boxshdw-5px: 3px 3px rgb(0, 0, 0, 0.3);
-  --color-backgrnd: rgb(191, 202, 248);
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  --color-backgrnd: rgb(31, 25, 59);
 }
 
 /* exo-regular - latin */
@@ -50,26 +44,21 @@
 
 body {
   font-family: Exo;
-}
-
-.body_box {
-  background-color: var(--color-backgrnd);
-  border: 2px solid black;
-  width: 1300px;
-  height: 1500px;
-  margin: 0px auto;
-  border-radius: 0px 0px 20px 20px;
-  border-top: none;
+  margin: 0 auto;
+  padding: 0;
 }
 
 header {
+  margin: 0 auto;
+  position: sticky;
+  top: 1px;
+  z-index: 1;
   background-color: var(--color-backgrnd);
   width: 1300px;
-  padding: 20px;
-  margin: 10px auto 0px auto;
-  border-radius: 20px 20px 0px 0px;
+  height: 100px;
+  padding: 5px;
+  border-radius: 5px;
   border: 2px solid black;
-  border-bottom: none;
 }
 
 h1 {
@@ -81,39 +70,29 @@ h1 {
 
 h1 {
   padding: 20px;
-  font-size: 40px;
-  text-align: left;
+  font-size: 50px;
+  text-align: center;
 }
 
 h2:not(#contact, #links) {
-  margin-left: 40px;
   padding-top: 10px;
   font-size: 25px;
   color: rgb(74, 0, 95);
 }
 
-.navigation {
-  text-align: left;
-  margin-left: 20px;
-  text-decoration: none;
-  color: var(--color-bttn);
-  padding: 3px 8px;
-  border: 2px solid;
-  border-color: black;
-  border-radius: 7px;
-  text-shadow: var(--textshdw-2px);
-}
-
-.navigation:hover {
-  background-color: var(--color-bttn-hover);
-  color: var(--color-bttn-text);
-}
-
-/* every element with href beginning with # set bakckground-color*/
-
 a[href^="#"] {
-  background-color: var(--color-bttn);
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  padding: 3px 8px;
+  text-shadow: var(--textshdw-2px);
   color: var(--color-bttn-text);
+}
+
+.navigation {
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
 }
 
 blockquote {
@@ -197,6 +176,20 @@ button:hover {
   width: 150px;
   margin-left: 40px;
   margin-top: 20px;
+}
+
+address::selection {
+  color: yellow;
+  background-color: rgb(3, 148, 42);
+}
+
+section a {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+section a:link {
+  color: rgb(255, 255, 255);
 }
 
 .links_icon,
