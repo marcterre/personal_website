@@ -6,7 +6,7 @@
   --color-blkqoutepink: rgb(182, 155, 201);
   --textshdw-2px: 2px 2px rgb(98, 19, 114, 0.5);
   --boxshdw-5px: 3px 3px rgb(0, 0, 0, 0.3);
-  --color-backgrnd: rgb(31, 25, 59);
+  --color-backgrnd: rgb(20, 6, 65);
 }
 
 /* exo-regular - latin */
@@ -42,14 +42,14 @@
       format("svg"); /* Legacy iOS */
 }
 
+* {
+  margin: 0px auto;
+}
 body {
   font-family: Exo;
-  margin: 0 auto;
-  padding: 0;
 }
 
 header {
-  margin: 0 auto;
   position: sticky;
   top: 1px;
   z-index: 1;
@@ -58,20 +58,22 @@ header {
   height: 100px;
   padding: 5px;
   border-radius: 5px;
-  border: 2px solid black;
-}
-
-h1 {
-  color: #1c3863;
-  margin: 0px;
-  padding: 0px;
-  text-shadow: var(--textshdw-2px);
 }
 
 h1 {
   padding: 20px;
   font-size: 50px;
   text-align: center;
+  color: #ffffffef;
+  text-shadow: var(--textshdw-2px);
+}
+
+.body_box {
+  position: relative;
+  top: 10px;
+  border: 1px solid black;
+  width: 1300px;
+  height: 570px;
 }
 
 h2:not(#contact, #links) {
@@ -91,8 +93,8 @@ a[href^="#"] {
 
 .navigation {
   position: absolute;
-  bottom: 0px;
-  right: 10px;
+  bottom: 5px;
+  right: 5px;
 }
 
 blockquote {
@@ -190,9 +192,4 @@ section a {
 
 section a:link {
   color: rgb(255, 255, 255);
-}
-
-.links_icon,
-footer {
-  text-align: center;
 }
