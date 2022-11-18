@@ -68,14 +68,6 @@ h1 {
   text-shadow: var(--textshdw-2px);
 }
 
-.body_box {
-  position: relative;
-  top: 10px;
-  border: 1px solid black;
-  width: 1300px;
-  height: 570px;
-}
-
 h2:not(#contact, #links) {
   padding-top: 10px;
   font-size: 25px;
@@ -98,19 +90,30 @@ a[href^="#"] {
 }
 
 blockquote {
-  margin-left: 40px;
+  position: relative;
+  top: 10px;
+  left: 265px;
   text-align: center;
   background-color: var(--color-blkqoutepink);
   border-radius: 5px;
   padding: 6px;
   box-shadow: var(--boxshdw-5px);
   width: 770px;
+  height: 20px;
   font-size: 15px;
 }
 
-.name_age {
-  margin: 10px 40px;
-  width: 700px;
+.about {
+  position: relative;
+  top: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 1300px;
+  height: 500px;
+}
+
+h2:not(#my-projects, #contact, #links, "Random things i like") {
+  text-align: center;
 }
 
 .profile img {
