@@ -3,4 +3,7 @@
 This is just the begining.
 Changes incoming.
 
-(228, 224, 254)
+Links for images/gifs:
+
+stars:
+https://media.giphy.com/media/lKpQLzEwqAQLtLv1O5/giphy.gif
