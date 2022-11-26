@@ -5,103 +5,128 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/styles.css" />
+    <script src="./index.js defer"></script>
     <title>my personal webpage</title>
   </head>
-  <header>
-    <h1>Hi! I'm Marc</h1>
-    <p class="headline">
+  <header class="header-grid">
+    <h1 class="header-h1-grid">Hi! I'm Marc</h1>
+    <p class="header-paragraph">
       ,25 and live in Biblis, a small city in South-Hessen.
     </p>
-    <nav class="nav">
-      <ul class="nav_list">
-        <li><a href="#about-me" class="navaboutme">About me</a></li>
-        <li><a href="#my-projects" class="navmyprojects">My Projects</a></li>
-        <li><a href="#contact" class="navcontact">Contact me</a></li>
-        <li><a href="#links" class="navlinks">Links</a></li>
+    <nav class="header-navigation">
+      <ul class="header-navigation__list">
+        <li class="header-navigation__list-items">
+          <a href="#about-me" class="navaboutme">About me</a>
+        </li>
+        <li class="header-navigation__list-items">
+          <a href="#my-projects" class="navmyprojects">My Projects</a>
+        </li>
+        <li class="header-navigation__list-items">
+          <a href="#contact" class="navcontact">Contact me</a>
+        </li>
+        <li class="header-navigation__list-items">
+          <a href="#links" class="navlinks">Links</a>
+        </li>
       </ul>
     </nav>
   </header>
   <body>
-    <section class="box_about">
-      <h2 id="about-me" class="about_h">About me</h2>
-      <article>
-        I was 16 when i started working as a carpenter. Then i studied for 2
-        semester architecure until i recognized its not the job i thought it
-        was. I ended up working in the pest control. Beside the fact that i love
-        animals i continued working there for the last 3,5 years. Finally i did
-        the step i wanted to do for a long time - learning web development full
-        time!
-      </article>
-      <figure class="profile">
-        <img src="/images/profile_picture.jpeg" alt="profile" />
-      </figure>
-      <section>
-        <h2 class="random_h">Random things i like</h2>
-        <ul class="randomthings">
-          <li>cats</li>
-          <li>lasagne</li>
-          <li>movies</li>
-          <li>fantasy</li>
-          <li>cyberpunk</li>
-          <li>gorillaz</li>
-          <li>tortilla chips</li>
-          <li>kaba</li>
-          <li>gaming</li>
-          <li>kazoo</li>
-          <li>shrek</li>
-        </ul>
+    <main class="main-boxes-grid">
+      <section class="box_about">
+        <h2 id="about-me" class="about_h">About me</h2>
+        <p>
+          I was 16 when i started working as a carpenter. Then i studied for 2
+          semester architecure until i recognized its not the job i thought it
+          was. I ended up working in the pest control. Beside the fact that i
+          love animals i continued working there for the last 3,5 years. Finally
+          i did the step i wanted to do for a long time - learning web
+          development full time!<br />
+          Here you can follow my journey.
+        </p>
+        <figure class="profile">
+          <img src="/images/profile_picture.jpeg" alt="profile" />
+        </figure>
+        <section>
+          <h2 class="random_h">Random things i like</h2>
+          <ul class="randomthings">
+            <li>cats</li>
+            <li>lasagne</li>
+            <li>movies</li>
+            <li>fantasy</li>
+            <li>cyberpunk</li>
+            <li>gorillaz</li>
+            <li>tortilla chips</li>
+            <li>kaba</li>
+            <li>gaming</li>
+            <li>kazoo</li>
+            <li>shrek</li>
+          </ul>
+        </section>
       </section>
-    </section>
-    <section class="box_projects">
-      <h2 id="my-projects">My Projects</h2>
-      <img
-        src="https://media.giphy.com/media/26zzgaDnp9HgPX1uw/giphy.gif"
-        alt="webpage_preview"
-        class="project-icon"
-      />
-      <img
-        src="https://media.giphy.com/media/xT9IgioE60R9797Uc0/giphy.gif"
-        alt="webpage_preview"
-        class="project-icon"
-      />
-      <img
-        src="https://media.giphy.com/media/fTz2gJRh37GpDaiiyD/giphy.gif"
-        alt="webpage_preview"
-        class="project-icon"
-      />
-    </section>
-    <section class="box_links">
-      <h2 id="contact">Contact</h2>
-      <address>
-        Marc <br />
-        Drury Lane 2 <br />
-        44444 Far Far Away
-      </address>
-      <a href="https://www.google.de/maps/@52.3833084,9.8063681,17z?hl=de"
-        >Go to maps</a
+      <section class="box_projects">
+        <h2 id="my-projects" class="my_projects">My Projects</h2>
+        <section class="project_display">
+          <section class="img_1">
+            <img
+              src="https://media.giphy.com/media/26zzgaDnp9HgPX1uw/giphy.gif"
+              alt="webpage_preview"
+              class="project_img"
+            />
+          </section>
+          <section class="img_2">
+            <img
+              src="https://media.giphy.com/media/xT9IgioE60R9797Uc0/giphy.gif"
+              alt="webpage_preview"
+              class="project_img"
+            />
+          </section>
+          <section class="img_3">
+            <img
+              src="https://media.giphy.com/media/fTz2gJRh37GpDaiiyD/giphy.gif"
+              alt="webpage_preview"
+              class="project_img"
+            />
+          </section>
+        </section>
+      </section>
+    </main>
+    <footer class="footer-box">
+      <section class="footer-box-contact">
+        <h2 id="contact" class="contact_h">Contact</h2>
+        <address>
+          Marc <br />
+          Drury Lane 2 <br />
+          44444 Far Far Away
+          <a href="https://www.google.de/maps/@52.3833084,9.8063681,17z?hl=de"
+            >Go to maps</a
+          >
+        </address>
+      </section>
+      <a
+        href="https://open.spotify.com/artist/3AA28KZvwAUcZuOKwyblJQ?si=Ix5gO2plQCSk_-EPOG8B5Q"
+        ><button type="button">enter</button></a
       >
-    </section>
-    <a
-      href="https://open.spotify.com/artist/3AA28KZvwAUcZuOKwyblJQ?si=Ix5gO2plQCSk_-EPOG8B5Q"
-      ><button type="button">enter</button></a
-    >
-    <section class="links_icon">
-      <h2 id="links">Links</h2>
-      <a href="https://www.facebook.com"
-        ><img src="/icons/facebook_icon.png" alt="facebook_icon" width="40px"
-      /></a>
-      <a href="https://www.instagram.com"
-        ><img src="/icons/instgram_icon.png" alt="instagram_icon" width="40px"
-      /></a>
-      <a href="https://www.whatsapp.com"
-        ><img src="/icons/whatsapp_icon.png" alt="whatsapp_icon" width="40px"
-      /></a>
-      <a href="https://www.linkedin.com"
-        ><img src="/icons/linkedin_icon.png" alt="linkedin_icon" width="40px"
-      /></a>
-      <a href="https://www.youtube.com"
-        ><img src="/icons/youtube_icon.png" alt="youtube_icon" width="40px"
-      /></a>
-    </section>
+      <section class="links_icon">
+        <h2 id="links">Links</h2>
+        <a href="https://www.facebook.com"
+          ><img src="/icons/facebook_icon.png" alt="facebook_icon" width="40px"
+        /></a>
+        <a href="https://www.instagram.com"
+          ><img
+            src="/icons/instgram_icon.png"
+            alt="instagram_icon"
+            width="40px"
+        /></a>
+        <a href="https://www.whatsapp.com"
+          ><img src="/icons/whatsapp_icon.png" alt="whatsapp_icon" width="40px"
+        /></a>
+        <a href="https://www.linkedin.com"
+          ><img src="/icons/linkedin_icon.png" alt="linkedin_icon" width="40px"
+        /></a>
+        <a href="https://www.youtube.com"
+          ><img src="/icons/youtube_icon.png" alt="youtube_icon" width="40px"
+        /></a>
+      </section>
+    </footer>
   </body>
 </html>

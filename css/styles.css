@@ -1,41 +1,16 @@
-:root {
+@import url(/css/global.css);
+
+/* :root {
   --color-bttn-text: rgb(0, 0, 0);
-  --color-blockbackgrnd: rgba(193, 216, 193, 0.587);
+  --color-blockbackgrnd: rgba(120, 30, 193, 0.219);
   --textshdw-1px: 1px 1px rgba(112, 109, 109, 0.5);
   --boxshdw: 2px 2px rgba(130, 130, 130, 0.3);
   --color-backgrnd: rgb(255, 255, 255);
-  --color-box-backgrnd: rgba(13, 126, 11, 0.524);
-  --color-h2: rgb(1, 74, 11);
-}
+  --color-box-backgrnd: rgba(38, 11, 126, 0.342);
+  --color-h2: rgb(81, 0, 73);
+} */
 
-/* alata-regular - latin */
-@font-face {
-  font-family: "Alata";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/alata-v9-latin-regular.eot"); /* IE9 Compat Modes */
-  src: local(""),
-    url("../fonts/alata-v9-latin-regular.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */ url("../fonts/alata-v9-latin-regular.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("../fonts/alata-v9-latin-regular.woff")
-      format("woff"),
-    /* Modern Browsers */ url("../fonts/alata-v9-latin-regular.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */ url("../fonts/alata-v9-latin-regular.svg#Alata")
-      format("svg"); /* Legacy iOS */
-}
-
-* {
-  margin: 0px auto;
-  padding: 0px;
-}
-body {
-  font-family: Alata;
-  background-color: var(--color-backgrnd);
-}
-
-header {
+/* header {
   position: sticky;
   top: 1px;
   z-index: 1;
@@ -77,7 +52,7 @@ a[href^="#"] {
 }
 
 a[href^="#"]:hover {
-  color: rgb(0, 155, 54);
+  color: rgb(155, 0, 142);
   text-decoration: underline solid;
 }
 
@@ -137,6 +112,7 @@ a[href^="#"]:hover {
 }
 
 .randomthings {
+  background-image: url();
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -145,7 +121,7 @@ a[href^="#"]:hover {
   position: absolute;
   top: 120px;
   left: 40px;
-  width: 300px;
+  width: 400px;
   height: 300px;
   padding: 10px;
   list-style: none;
@@ -172,12 +148,44 @@ article {
   height: 500px;
 }
 
-.project-icon {
-  margin-left: 30px;
-  width: 300px;
-  padding: 10px;
-  height: 400px;
-  border-radius: 25px;
+.my_projects {
+  color: var(--color-h2);
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.project_display {
+  position: relative;
+  top: 100px;
+  left: 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.project_img {
+  width: 350px;
+  height: 360px;
+  border-radius: 10px;
+  background-color: aqua;
+}
+
+.img_1:hover,
+.img_2:hover,
+.img_3:hover {
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  opacity: 0.5;
+}
+
+.contact_h {
+  color: var(--color-h2);
+  position: absolute;
+  top: 40px;
+  left: 40px;
 }
 
 button {
@@ -210,17 +218,17 @@ button:hover {
 }
 
 address {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 80px;
   text-align: left;
   border: 2px solid;
   border-radius: 10px;
-  width: 150px;
+  width: 200px;
   margin-left: 40px;
   margin-top: 20px;
-}
-
-address::selection {
-  color: yellow;
-  background-color: rgb(3, 148, 42);
 }
 
 section a {
@@ -230,4 +238,4 @@ section a {
 
 section a:link {
   color: rgb(255, 255, 255);
-}
+} */
