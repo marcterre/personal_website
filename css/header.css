@@ -1,0 +1,32 @@
+.header-grid {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 105, 180, 0.643);
+}
+
+.header-grid h1 {
+  padding-left: 20px;
+}
+
+.header-navigation__list {
+  display: flex;
+  justify-content: space-evenly;
+  width: 450px;
+}
+
+.header-navigation__list a {
+  text-decoration: none;
+  color: black;
+}
+
+.header-navigation__list a:hover {
+  color: white;
+}
+
+.header-navigation__list-items {
+  list-style: none;
+}

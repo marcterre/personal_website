@@ -5,35 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/styles.css" />
-    <script src="./index.js defer"></script>
+    <script src="./index.js" defer></script>
     <title>my personal webpage</title>
   </head>
   <header class="header-grid">
-    <h1 class="header-h1-grid">Hi! I'm Marc</h1>
-    <p class="header-paragraph">
-      ,25 and live in Biblis, a small city in South-Hessen.
-    </p>
+    <h1>Hi! I'm Marc</h1>
+    <p>,25 and live in Biblis, a small city in South-Hessen.</p>
     <nav class="header-navigation">
       <ul class="header-navigation__list">
         <li class="header-navigation__list-items">
-          <a href="#about-me" class="navaboutme">About me</a>
+          <a
+            href="#about-me"
+            data-js="header-navigation__about-me-event-listener"
+            >About me</a
+          >
         </li>
         <li class="header-navigation__list-items">
-          <a href="#my-projects" class="navmyprojects">My Projects</a>
+          <a
+            href="#my-projects"
+            data-js="header-navigation__my-projects-event-listener"
+            >My Projects</a
+          >
         </li>
         <li class="header-navigation__list-items">
-          <a href="#contact" class="navcontact">Contact me</a>
+          <a href="#contact" data-js="header-navigation__contact-event-listener"
+            >Contact me</a
+          >
         </li>
         <li class="header-navigation__list-items">
-          <a href="#links" class="navlinks">Links</a>
+          <a href="#links" data-js="header-navigation__links-event-listener"
+            >Links</a
+          >
         </li>
       </ul>
     </nav>
   </header>
   <body>
     <main class="main-boxes-grid">
-      <section class="box_about">
-        <h2 id="about-me" class="about_h">About me</h2>
+      <section class="main-boxes__about-me">
+        <h2 id="about-me">About me</h2>
         <p>
           I was 16 when i started working as a carpenter. Then i studied for 2
           semester architecure until i recognized its not the job i thought it
