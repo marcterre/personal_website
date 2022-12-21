@@ -1,9 +1,10 @@
 import Navgation from "../Navigation";
 
-export default function Header() {
+export default function Header({ title, heading }) {
   return (
     <header>
-      <title>This is my universe.</title>
+      <title>{title}</title>
+      <h1>{heading}</h1>
       <Navgation></Navgation>
     </header>
   );

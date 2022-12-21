@@ -1,3 +1,12 @@
+import Header from "../Header";
+import About from "../About";
+import ImageAlienInvasion from "../../assets/AlienInvasion.svg";
+
 export default function StartPage() {
-  return <></>;
+  return (
+    <>
+      <Header title="This is my universe" heading="Welcome to my universe" />
+      <About aboutImageSrc={""} aboutAlt="Alien Invasion" />
+    </>
+  );
 }
