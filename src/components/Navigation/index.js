@@ -1,4 +1,4 @@
-import NavgationListItem from "../NavigationListItem/NavigationListItem";
+import NavgationListItem from "./NavigationListItem";
 
 export default function Navgation({ navigationLink, children }) {
   return (

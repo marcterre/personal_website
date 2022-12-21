@@ -12,7 +12,9 @@ const arrayTags = [
 ];
 
 export default function AboutTags() {
-  const listTags = arrayTags.map((element) => <li>{element}</li>);
+  const listTags = arrayTags.map((element) => (
+    <li key={crypto.randomUUID()}>{element}</li>
+  ));
 
   return (
     <section>
