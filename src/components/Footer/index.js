@@ -20,9 +20,9 @@ export default function Footer() {
           <StyledList>
             <Link href="google.com">My Projects</Link>
           </StyledList>
-          <lStyledListi>
+          <StyledList>
             <Link href="google.com">Contact</Link>
-          </lStyledListi>
+          </StyledList>
         </ul>
       </section>
       <section>
