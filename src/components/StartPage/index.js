@@ -6,7 +6,7 @@ export default function StartPage() {
   return (
     <>
       <Header title="This is my universe" heading="Welcome to my universe" />
-      <About aboutImageSrc={""} aboutAlt="Alien Invasion" />
+      <About aboutImageSrc={ImageAlienInvasion} aboutAlt="Alien Invasion" />
     </>
   );
 }

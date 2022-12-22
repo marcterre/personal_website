@@ -1,3 +1,4 @@
+import { createGlobalStyle } from "styled-components";
 import StartPage from "./components/StartPage";
 // import Navgation from "./components/Navigation";
 

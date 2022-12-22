@@ -1,5 +1,6 @@
 import AboutArticle from "./AboutArticle";
 import AboutTags from "./AboutTags";
+import styled from "styled-components";
 
 export default function About({ aboutImageSrc, aboutAlt }) {
   return (
@@ -16,8 +17,10 @@ export default function About({ aboutImageSrc, aboutAlt }) {
     <br />
     Here you can follow my journey."
       />
-      <img src={aboutImageSrc} alt={aboutAlt}></img>
+      <ImageInvasion src={aboutImageSrc} alt={aboutAlt}></ImageInvasion>
       <AboutTags />
     </>
   );
 }
+
+const ImageInvasion = styled.img``;
