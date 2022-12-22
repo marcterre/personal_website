@@ -17,10 +17,12 @@ export default function About({ aboutImageSrc, aboutAlt }) {
     <br />
     Here you can follow my journey."
       />
-      <ImageInvasion src={aboutImageSrc} alt={aboutAlt}></ImageInvasion>
+      <ImageInvasion src={aboutImageSrc} alt={aboutAlt} />
       <AboutTags />
     </>
   );
 }
 
-const ImageInvasion = styled.img``;
+const ImageInvasion = styled.img`
+  width: 50vw;
+`;
