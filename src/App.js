@@ -3,9 +3,9 @@ import Header from "./components/Header/index";
 import About from "./components/About/index";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 import ImageAlienInvasion from "./assets/AlienInvasion.svg";
-// import Navgation from "./components/Navigation";
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
         <Projects />
         <Contact />
       </main>
+      <Footer />
     </>
   );
 }
