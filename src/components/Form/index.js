@@ -1,7 +1,85 @@
 // import styled from "styled-components";
-import { uuid } from "uuidv4";
+const animalEmojis = [
+  "🐶",
+  "🐱",
+  "🐭",
+  "🐹",
+  "🐰",
+  "🦊",
+  "🐻",
+  "🐼",
+  "🐨",
+  "🐯",
+  "🦁",
+  "🐮",
+  "🐷",
+  "🐸",
+  "🐵",
+  "🐔",
+  "🐧",
+  "🐦",
+  "🐤",
+  "🐣",
+  "🐥",
+  "🦆",
+  "🦅",
+  "🦉",
+  "🦇",
+  "🐺",
+  "🐗",
+  "🐴",
+  "🦄",
+  "🐝",
+  "🪱",
+  "🐛",
+  "🦋",
+  "🐌",
+  "🐞",
+  "🐜",
+  "🪰",
+  "🪲",
+  "🪳",
+  "🐢",
+  "🐍",
+  "🦎",
+  "🦖",
+  "🦕",
+  "🐙",
+  "🦑",
+  "🦐",
+  "🦞",
+  "🦀",
+  "🐡",
+  "🐠",
+  "🐟",
+  "🐬",
+  "🐳",
+  "🐋",
+  "🦈",
+  "🐊",
+  "🐅",
+  "🐆",
+  "🦓",
+  "🦍",
+  "🦧",
+  "🦣",
+  "🦛",
+  "🐘",
+  "🦏",
+  "🐪",
+  "🐫",
+  "🦒",
+  "🦘",
+  "🦙",
+  "🦥",
+  "🦨",
+  "🦡",
+  "🦦",
+  "🦔",
+  "🐻‍❄️",
+];
 
-export default function Form({ onSubmit, labelAnimals }) {
+export default function Form({ onSubmit }) {
   function handleSubmit(event) {
     event.preventDefault();
 
@@ -12,15 +90,14 @@ export default function Form({ onSubmit, labelAnimals }) {
     onSubmit(data);
 
     event.target.reset();
-    event.target.elements.name.focus();
   }
 
   return (
     <form onSubmit={handleSubmit}>
       <fieldset>
         <legend>Write me</legend>
-        <FormInput labelFor="nameInput" type="text" placeholder="Peppa">
-          First name:{" "}
+        <FormInput labelFor="name" type="text" placeholder="Peppa">
+          First name:
         </FormInput>
         <label htmlFor="textarea">Comment: </label>
         <textarea
@@ -28,16 +105,19 @@ export default function Form({ onSubmit, labelAnimals }) {
           type="text"
           placeholder="Like your projects!"
         ></textarea>
-        <label htmlFor="animals">{labelAnimals}</label>
+        <label htmlFor="animals">Whats your favorite animal?</label>
         <select name="animals">
-          <FormSelectOptions value="dog">🐶</FormSelectOptions>
-          <FormSelectOptions value="cat">🐱</FormSelectOptions>
-          <FormSelectOptions value="mouse">🐭</FormSelectOptions>
-          <FormSelectOptions value="hamster">🐹</FormSelectOptions>
-          <FormSelectOptions value="rabbit">🐰</FormSelectOptions>
-          <FormSelectOptions value="cow">🐮</FormSelectOptions>
-          <FormSelectOptions value="pig">🐷</FormSelectOptions>
+          {animalEmojis.map((animalEmoji) => (
+            <option key={animalEmoji} value={animalEmoji} />
+          ))}
         </select>
+        <fieldset>
+          <legend>Did you watch "Spider-Man: A new universe"?</legend>
+          <input name="checkbox" type="radio" id="movieNo"></input>
+          <label htmlFor="movieNo">No</label>
+          <input name="checkbox" type="radio" id="movieYes"></input>
+          <label htmlFor="movieYes">Yes</label>
+        </fieldset>
         <button type="submit">Send</button>
       </fieldset>
     </form>
@@ -50,7 +130,7 @@ function FormInput({ labelFor, children, type, placeholder }) {
       <label htmlFor={labelFor}>{children}</label>
       <input
         name={labelFor}
-        id={labelFor}
+        id={crypto.randomUUID()}
         type={type}
         placeholder={placeholder}
         required
@@ -59,10 +139,6 @@ function FormInput({ labelFor, children, type, placeholder }) {
   );
 }
 
-function FormSelectOptions({ value, children }) {
-  return (
-    <option value={value} id={value}>
-      {children}
-    </option>
-  );
-}
+// function FormSelectOptions({ value, children }) {
+//   return <option value={value}>{children}</option>;
+// }

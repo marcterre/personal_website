@@ -3,10 +3,12 @@ export default function CommentList({ comments }) {
     <section>
       <h2>Comments</h2>
       {comments.map((comment) => (
-        <article key={comment.id}>
-          <h3>{comment.name}</h3>
+        <section key={crypto.randomUUID()}>
           <p>{comment.textarea}</p>
-        </article>
+          <p>{`My favorite animal is the ${comment.animals}.`}</p>
+          {console.log(comment.movieNo)}
+          <h3>{`- ${comment.name}`}</h3>
+        </section>
       ))}
     </section>
   );

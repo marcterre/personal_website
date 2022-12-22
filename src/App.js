@@ -1,4 +1,6 @@
-import { useState } from "react";
+// import { useState } from "react";
+import useLocalStorageState from "use-local-storage-state";
+
 import GlobalStyle from "./styles";
 import Header from "./components/Header/index";
 import About from "./components/About/index";
@@ -11,7 +13,9 @@ import Footer from "./components/Footer";
 import ImageAlienInvasion from "./assets/AlienInvasion.svg";
 
 function App() {
-  const [comments, setComments] = useState([]);
+  const [comments, setComments] = useLocalStorageState("comments", {
+    defaultValue: [],
+  });
 
   function addComments(comment) {
     setComments((oldComments) => [
@@ -22,6 +26,11 @@ function App() {
       },
     ]);
   }
+
+  // function handleCheckbox() {
+  //   if()
+  // }
+
   return (
     <>
       <GlobalStyle />
@@ -30,10 +39,7 @@ function App() {
         <About aboutImageSrc={ImageAlienInvasion} aboutAlt="Alien Invasion" />
         <Projects />
         <Contact />
-        <Form
-          onSubmit={addComments}
-          labelAnimals="Whats your favorite animal?"
-        />
+        <Form onSubmit={addComments} />
         <CommentList comments={comments} />
       </main>
       <Footer />
