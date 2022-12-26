@@ -1,4 +1,4 @@
-// import { useState } from "react";
+import { useState } from "react";
 import useLocalStorageState from "use-local-storage-state";
 
 import GlobalStyle from "./styles";
@@ -17,19 +17,26 @@ function App() {
     defaultValue: [],
   });
 
+  const [selected, setSelected] = useState("yes");
+
   function addComments(comment) {
     setComments((oldComments) => [
-      ...oldComments,
       {
         ...comment,
         id: crypto.randomUUID(),
       },
+      ...oldComments,
     ]);
   }
 
-  // function handleCheckbox() {
-  //   if()
-  // }
+  const [checkboxOutput, setCheckboxOutput] = useState("");
+
+  function handleRadioChange(event) {
+    setSelected(event.target.value);
+    // console.log(event.target.value);
+    // not working below
+    setCheckboxOutput("Nope");
+  }
 
   return (
     <>
@@ -39,8 +46,12 @@ function App() {
         <About aboutImageSrc={ImageAlienInvasion} aboutAlt="Alien Invasion" />
         <Projects />
         <Contact />
-        <Form onSubmit={addComments} />
-        <CommentList comments={comments} />
+        <Form
+          onSubmit={addComments}
+          handleRadioChange={handleRadioChange}
+          selected={selected}
+        />
+        <CommentList comments={comments} checkboxOutput={checkboxOutput} />
       </main>
       <Footer />
     </>

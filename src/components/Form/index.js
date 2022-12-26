@@ -79,7 +79,7 @@ const animalEmojis = [
   "🐻‍❄️",
 ];
 
-export default function Form({ onSubmit }) {
+export default function Form({ onSubmit, handleRadioChange, selected }) {
   function handleSubmit(event) {
     event.preventDefault();
 
@@ -91,6 +91,13 @@ export default function Form({ onSubmit }) {
 
     event.target.reset();
   }
+
+  //   function handleRadioChange(event) {
+  //     if (event.checked) {
+  //       console.log(event.target.value);
+  //     }
+  //     console.log(event.target.value);
+  //   }
 
   return (
     <form onSubmit={handleSubmit}>
@@ -113,9 +120,22 @@ export default function Form({ onSubmit }) {
         </select>
         <fieldset>
           <legend>Did you watch "Spider-Man: A new universe"?</legend>
-          <input name="checkbox" type="radio" id="movieNo"></input>
+          <input
+            name="checkbox"
+            type="radio"
+            id="movieNo"
+            value="No"
+            checked={selected === "yes"}
+            onChange={handleRadioChange}
+          ></input>
           <label htmlFor="movieNo">No</label>
-          <input name="checkbox" type="radio" id="movieYes"></input>
+          <input
+            name="checkbox"
+            type="radio"
+            id="movieYes"
+            // checked={checked}
+            // onChange={handleRadioChange}
+          ></input>
           <label htmlFor="movieYes">Yes</label>
         </fieldset>
         <button type="submit">Send</button>
@@ -124,11 +144,18 @@ export default function Form({ onSubmit }) {
   );
 }
 
-function FormInput({ labelFor, children, type, placeholder }) {
+function FormInput({
+  handleNameChange,
+  labelFor,
+  children,
+  type,
+  placeholder,
+}) {
   return (
     <>
       <label htmlFor={labelFor}>{children}</label>
       <input
+        onChange={handleNameChange}
         name={labelFor}
         id={crypto.randomUUID()}
         type={type}
