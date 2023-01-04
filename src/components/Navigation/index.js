@@ -1,8 +1,12 @@
 export default function Navgation() {
   return (
     <ul>
-      <NavgationListItem navigationLink={""}>About me</NavgationListItem>
-      <NavgationListItem navigationLink={""}>My Projects</NavgationListItem>
+      <NavgationListItem navigationLink={"../About/index.js"}>
+        About me
+      </NavgationListItem>
+      <NavgationListItem navigationLink={"../Projects/index.js"}>
+        My Projects
+      </NavgationListItem>
       <NavgationListItem navigationLink={""}>Contact</NavgationListItem>
     </ul>
   );
