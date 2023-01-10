@@ -5,7 +5,7 @@ import { projects } from "../../library/data";
 export default function Projects() {
   return (
     <>
-      <h2>My Projects</h2>
+      <h2>My Projectss</h2>
       <ul>
         {projects.map((project) => (
           <li key={project.name}>
