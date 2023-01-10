@@ -1,15 +1,20 @@
 import Link from "next/link";
 
-const navBar = [{ name: "About me", link: "../about-me" }];
-
 export default function Navigation() {
   return (
-    <ul>
-      {navBar.map((element) => {
+    <header>
+      <h1>Welcome to my universe </h1>
+      <ul>
         <li>
-          <Link href={element.link}>{element.name}</Link>
-        </li>;
-      })}
-    </ul>
+          <Link href="../about-me">About me</Link>
+        </li>
+        <li>
+          <Link href="../projects">My Projects</Link>
+        </li>
+        <li>
+          <Link href="../Contact">Contact</Link>
+        </li>
+      </ul>
+    </header>
   );
 }
